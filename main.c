@@ -29,7 +29,7 @@ int main(){
         {
             ch[i] = ((msgText[i] - 65 + key) % 26) + 65; // Apply the formula for Caesar encryption
             ch[i]= '\0';
-            printf("The encrypted text is : %s", ch); //Print the encrypted text
+            printf("The encrypted text is : %s", ch); //Prints the encrypted text
             i++;
         }
 
@@ -63,15 +63,15 @@ scanf("%d", &key); // Allows the input of the key
 
     if (ct[i] >= 65 && ct[i]<=90)// checks if the letters in the message are uppercase
     {
-        ch = ((ct[i] - 65 - key) % 26) + 65;
+        ch = ((ct[i] - 65 - key) % 26) + 65; // Caesar decryption formula
     }
 
    else if(ct[i]>=97 && ct[i]<=122)// checks if the letter in the message are lowercase
    {
-       ch = ((ct[i] - 65 - key) % 26) + 65;
+       ch = ((ct[i] - 65 - key) % 26) + 65; //// Caesar decryption formula
    }
 
-   printf("Decrypted message: %s", ch); //prints the
+   printf("Decrypted message: %s", ch); //prints the decrypted message.
 
     }
 
