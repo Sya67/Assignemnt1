@@ -32,7 +32,7 @@ void CaesarEncryption(){ //define function which will carry out the encryption
             ch = ch + key;
 
  
-           if(ch > 'Z'){
+          if(ch > 'Z'){
             ch = ch - 'Z' + 'A' - 1;
         }
 
